@@ -2,6 +2,7 @@
 title: Paper Review
 date: 2021-01-29 12:02:40
 tags: NLP
+description: This is a content for paper reviewed
 ---
 
 # Relation Extraction
@@ -13,6 +14,8 @@ https://www.aclweb.org/anthology/D18-1248.pdf
 2 NERO: A Neural Rule Grounding Framework for Label-Efficient Relation Extraction (WWW2020)
 
 https://arxiv.org/pdf/1909.02177.pdf
+
+<!-- more -->
 
 3 Matching the Blanks: Distributional Similarity for Relation Learning(ACL2019)
 
