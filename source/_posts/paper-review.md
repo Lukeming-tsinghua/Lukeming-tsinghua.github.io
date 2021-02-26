@@ -96,6 +96,10 @@ https://arxiv.org/pdf/2011.06854.pdf
 
 https://arxiv.org/pdf/2004.13625.pdf
 
+5. Reader-Guided Passage Reranking for Open-Domain Question Answering
+
+https://arxiv.org/pdf/2101.00294.pdf
+
 # Few-shot/Zero-shot RE
 
 1. Zero-shot Learning by Generating Task-specific Adapters
