@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="This is a content for paper reviewed">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Paper Review">
+<meta property="og:url" content="http://example.com/2021/01/29/paper-review/index.html">
+<meta property="og:site_name" content="Lukeming">
+<meta property="og:description" content="This is a content for paper reviewed">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-29T20:02:40.000Z">
+<meta property="article:modified_time" content="2021-09-03T17:43:37.784Z">
+<meta property="article:author" content="Keming Lu">
+<meta property="article:tag" content="NLP">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021/01/29/paper-review/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Paper Review | Lukeming</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lukeming</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/29/paper-review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Keming Lu">
+      <meta itemprop="description" content="A website for recalling">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lukeming">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Paper Review
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-01-29 12:02:40" itemprop="dateCreated datePublished" datetime="2021-01-29T12:02:40-08:00">2021-01-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-09-03 10:43:37" itemprop="dateModified" datetime="2021-09-03T10:43:37-07:00">2021-09-03</time>
+              </span>
+
+          
+            <div class="post-description">This is a content for paper reviewed</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="Relation-Extraction"><a href="#Relation-Extraction" class="headerlink" title="Relation Extraction"></a>Relation Extraction</h1><ol>
+<li>Label-Free Distant Supervision for Relation Extraction via Knowledge Graph Embedding (EMNLP2018)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.aclweb.org/anthology/D18-1248.pdf">https://www.aclweb.org/anthology/D18-1248.pdf</a></p>
+<ol start="2">
+<li>NERO: A Neural Rule Grounding Framework for Label-Efficient Relation Extraction (WWW2020)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1909.02177.pdf">https://arxiv.org/pdf/1909.02177.pdf</a></p>
+<p>&lt;!-more –&gt;</p>
+<ol start="3">
+<li>Matching the Blanks: Distributional Similarity for Relation Learning(ACL2019)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1906.03158.pdf">https://arxiv.org/pdf/1906.03158.pdf</a></p>
+<ol start="4">
+<li>A Frustratingly Easy Approach for Joint Entity and Relation Extraction</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2010.12812.pdf">https://arxiv.org/pdf/2010.12812.pdf</a></p>
+<ol start="5">
+<li>Relation Extraction Using Supervision from Topic Knowledge of Relation Labels(IJCAI2019)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.ijcai.org/Proceedings/2019/0698.pdf">https://www.ijcai.org/Proceedings/2019/0698.pdf</a></p>
+<ol start="6">
+<li>Cross Relation Cross Bag attention for distantly supervision(AAAI19)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.aaai.org/ojs/index.php/AAAI/article/download/3813/3691">https://www.aaai.org/ojs/index.php/AAAI/article/download/3813/3691</a></p>
+<ol start="7">
+<li>Relation Extraction with Multi-instance Multi-label Convolutional Neural Networks (COLING 2016)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.aclweb.org/anthology/C16-1139.pdf">https://www.aclweb.org/anthology/C16-1139.pdf</a></p>
+<ol start="8">
+<li>Looking Beyond Label Noise: Shifted Label Distribution Matters in Distantly Supervised Relation Extraction</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1904.09331.pdf">https://arxiv.org/pdf/1904.09331.pdf</a></p>
+<p>This work focuses on study what limits the performance of DS-trained neural models. After conducting analyses, the authors believe a significant factor shifted label distribution is overlooked before. The difference between DS training dataset and correspondding human-annotated dataset comes from the miss-labeling of distant supervision, since distant supervision may bring false negative and false positive samples into training dataset and results in a different label distribution. Then, authors introduce two threshold-based methods - max threshold and entrophy threshold and demontrate a good F1 improvements when adopting these methods to both DS dataset KBP, NYT and annotated dataset TACRED. Besides, inspiring by domain adaption, authors also propose another theoretically-sound adaptation method - bias adjustment to enhance model performance under label distribution shift. With two bias adjustment strategies BA-Set and BA-Fix, impressed gains of F1 score are witnessed on DS dataset.</p>
+<ol start="9">
+<li>Learning Dual Retrieval Module for Semi-supervised Relation Extraction (WWW19)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1902.07814.pdf">https://arxiv.org/pdf/1902.07814.pdf</a></p>
+<h1 id="Interpretation"><a href="#Interpretation" class="headerlink" title="Interpretation"></a>Interpretation</h1><ol>
+<li>Towards Hierarchical Importance Attribution: Explaining Compositional Semantics for Neural Sequence Models(ICLR2020)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://openreview.net/pdf?id=BkxRRkSKwr">https://openreview.net/pdf?id=BkxRRkSKwr</a></p>
+<ol start="2">
+<li>Visualizing and Understanding Neural Models in NLP</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1506.01066.pdf">https://arxiv.org/pdf/1506.01066.pdf</a></p>
+<ol start="3">
+<li>Axiomatic Attribution for Deep Networks</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1703.01365.pdf">https://arxiv.org/pdf/1703.01365.pdf</a></p>
+<ol start="4">
+<li>Generating Hierarchical Explanations on Text Classification via Feature Interaction Detection</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2004.02015.pdf">https://arxiv.org/pdf/2004.02015.pdf</a></p>
+<ol start="5">
+<li>Hierarchical Interpretations For Neural Network Predictions</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1806.05337.pdf">https://arxiv.org/pdf/1806.05337.pdf</a></p>
+<ol start="6">
+<li>Incorporating Priors with Feature Attribution on Text Classification</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1906.08286.pdf">https://arxiv.org/pdf/1906.08286.pdf</a></p>
+<ol start="7">
+<li>Did the Model Understand the Question?</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.aclweb.org/anthology/P18-1176.pdf">https://www.aclweb.org/anthology/P18-1176.pdf</a></p>
+<h1 id="NER"><a href="#NER" class="headerlink" title="NER"></a>NER</h1><ol>
+<li>TriggerNER: Learning with Entity Triggers as Explanations for Named Entity Recognition(ACL2020)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2004.07493.pdf">https://arxiv.org/pdf/2004.07493.pdf</a></p>
+<ol start="2">
+<li>A Rigorous Study on Named Entity Recognition: Can Fine-tuning Pretrained Model Lead to the Promised Land?</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2004.12126.pdf">https://arxiv.org/pdf/2004.12126.pdf</a></p>
+<ol start="3">
+<li>Interpretable Multi-dataset Evaluation for Named Entity Recognition</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2011.06854.pdf">https://arxiv.org/pdf/2011.06854.pdf</a></p>
+<ol start="4">
+<li>Event Extraction by Answering (Almost) Natural Questions</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2004.13625.pdf">https://arxiv.org/pdf/2004.13625.pdf</a></p>
+<ol start="5">
+<li>Reader-Guided Passage Reranking for Open-Domain Question Answering</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2101.00294.pdf">https://arxiv.org/pdf/2101.00294.pdf</a></p>
+<h1 id="Few-shot-Zero-shot-RE"><a href="#Few-shot-Zero-shot-RE" class="headerlink" title="Few-shot/Zero-shot RE"></a>Few-shot/Zero-shot RE</h1><ol>
+<li>Zero-shot Learning by Generating Task-specific Adapters</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2101.00420.pdf">https://arxiv.org/pdf/2101.00420.pdf</a></p>
+<ol start="2">
+<li>Hybrid Attention-Based Prototypical Networks for Noisy Few-Shot Relation Classification (AAAI2019)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://gaotianyu1350.github.io/assets/aaai2019_hatt_paper.pdf">https://gaotianyu1350.github.io/assets/aaai2019_hatt_paper.pdf</a></p>
+<ol start="3">
+<li>Prototypical Networks for Few-shot Learning</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1703.05175.pdf">https://arxiv.org/pdf/1703.05175.pdf</a></p>
+<h1 id="Integrate-PLMs-with-KG"><a href="#Integrate-PLMs-with-KG" class="headerlink" title="Integrate PLMs with KG"></a>Integrate PLMs with KG</h1><h2 id="Entity-aware-language-models"><a href="#Entity-aware-language-models" class="headerlink" title="Entity-aware language models"></a>Entity-aware language models</h2><ol>
+<li>ERNIE: Enhanced Representation through Knowledge Integration</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1904.09223.pdf">https://arxiv.org/pdf/1904.09223.pdf</a></p>
+<p>ERNIE from Baidu proposes the knowledge masking strategy for masked language model to enhance language representation by knowledge.</p>
+<ol start="2">
+<li>Knowledge Enhanced Contextual Word Representations</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1909.04164.pdf">https://arxiv.org/pdf/1909.04164.pdf</a></p>
+<p>This model incorporates WordNet knowledge bases into BERT using Knowledge attention and recontextualization, and entity linking information in Wikipedia. If entity linking supervision is available, the model is learned with an additional knowledge-aware log-likelihood or max-margin objective.</p>
+<ol start="3">
+<li>Entities as Experts: Sparse Memory Access with Entity Supervision</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2004.07202.pdf">https://arxiv.org/pdf/2004.07202.pdf</a></p>
+<p>This work focuses on the problem of capturing declarative knowledge about entities in the learned parameters of a language model. The proposed model Entities as Experts (EAE) can access distinct memories of the entities mentioned in a piece of text. It’s entity representations are learned directly from text instead of integrate entity knowledge into sequence models.</p>
+<h2 id="Integrate-PLMs-with-KGE-amp-Transformer-structure"><a href="#Integrate-PLMs-with-KGE-amp-Transformer-structure" class="headerlink" title="Integrate PLMs with KGE &amp; Transformer structure"></a>Integrate PLMs with KGE &amp; Transformer structure</h2><ol>
+<li>ERNIE-THU</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.aclweb.org/anthology/P19-1139.pdf">https://www.aclweb.org/anthology/P19-1139.pdf</a></p>
+<p>This work injects a knowledge graph into BERT. They align entities from Wikipedia sentences to fact triples in WikiData. In the training process, the input includes sentences and linked facts, and the knowledge-aware learning objective is to predict the correct token-entity alignment. Entity embeddings are trained on fact triples from WikiData via TransE</p>
+<ol start="2">
+<li>K-BERT: Enabling Language Representation with Knowledge Graph</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1909.07606.pdf">https://arxiv.org/pdf/1909.07606.pdf</a></p>
+<ol start="3">
+<li>Integrating Graph Contextualized Knowledge into Pre-trained Language Models</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1912.00147.pdf">https://arxiv.org/pdf/1912.00147.pdf</a></p>
+<p>This work integrates fact triples from knowledge graph. For each entity, it sample incoming and outcoming instances from the neighbors on the knowledge graph, and replaces head or tail entity to create negative instances. The model is learned to discriminate between real and fake facts.</p>
+<ol start="4">
+<li>CoLAKE: Contextualized Language and Knowledge Embedding</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2010.00309.pdf">https://arxiv.org/pdf/2010.00309.pdf</a></p>
+<p>This work proposes CoLAKE which jointly learns contextualized representation for both language and knowledge with the extended MLM objective. Instead of injecting only entity embeddings, CoLAKE extracts the knowledge context of an entity from large-scale knowledge bases. To handle the heterogeneity of knowledge context and language context, knowledge graph and text are integrated in a unified data structure, word-knowledge graph (WK graph).</p>
+<ol start="5">
+<li>K-ADAPTER: Infusing Knowledge into Pre-Trained Models with Adapters</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2002.01808v3.pdf">https://arxiv.org/pdf/2002.01808v3.pdf</a></p>
+<ol start="6">
+<li>KEPLER: A Unified Model for Knowledge Embedding and Pre-trained Language Representation</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1911.06136.pdf">https://arxiv.org/pdf/1911.06136.pdf</a></p>
+<ol start="7">
+<li>JAKET: JOINT PRE-TRAINING OF KNOWLEDGE GRAPH AND LANGUAGE UNDERSTANDING</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2010.00796.pdf">https://arxiv.org/pdf/2010.00796.pdf</a></p>
+<h1 id="Knowledge-Graph-Embedding"><a href="#Knowledge-Graph-Embedding" class="headerlink" title="Knowledge Graph Embedding"></a>Knowledge Graph Embedding</h1><h2 id="Text-enhanced-KGE"><a href="#Text-enhanced-KGE" class="headerlink" title="Text-enhanced KGE"></a>Text-enhanced KGE</h2><ol>
+<li>Joint Representation Learning of Text and Knowledge for Knowledge Graph Completion</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1611.04125.pdf">https://arxiv.org/pdf/1611.04125.pdf</a></p>
+<ol start="2">
+<li>Accurate Text-Enhanced Knowledge Graph Representation Learning (NAACL2018)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.aclweb.org/anthology/N18-1068.pdf">https://www.aclweb.org/anthology/N18-1068.pdf</a></p>
+<ol start="3">
+<li>A Model of Text-enhanced Knowledge Graph Representation Learning with Mutual Attention (IEEE Access)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9037292">https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9037292</a></p>
+<h2 id="Calibration"><a href="#Calibration" class="headerlink" title="Calibration"></a>Calibration</h2><ol>
+<li>Evaluating the Calibration of Knowledge Graph Embeddings for Trustworthy Link Prediction(2020EMNLP)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.aclweb.org/anthology/2020.emnlp-main.667.pdf">https://www.aclweb.org/anthology/2020.emnlp-main.667.pdf</a></p>
+<ol start="2">
+<li>Probability Calibration For Knowledge Graph Embedding Models(ICLR2020)</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1912.10000.pdf">https://arxiv.org/pdf/1912.10000.pdf</a></p>
+<h1 id="Distillation"><a href="#Distillation" class="headerlink" title="Distillation"></a>Distillation</h1><h2 id="Online-distillation"><a href="#Online-distillation" class="headerlink" title="Online distillation"></a>Online distillation</h2><ol>
+<li>Deep Mutual Learning</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Deep_Mutual_Learning_CVPR_2018_paper.pdf">https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Deep_Mutual_Learning_CVPR_2018_paper.pdf</a></p>
+<p>Model distillation is an effective and widely used technique to transfer knowledge from a teacher to a student network. The typical application is to transfer from a powerful large network or ensemble to a small network, in order to meet the low-memory or fast execution requirements. In this paper, we present a deep mutual learning (DML) strategy. Different from the one-way transfer between a static pre-defined teacher and a student in model distillation, with DML, an ensemble of students learn collaboratively and teach each other throughout the training process. Our experiments show that a variety of network architectures benefit from mutual learning and achieve compelling results on both category and instance recognition tasks. Surprisingly, it is revealed that no prior powerful teacher network is necessary – mutual learning of a collection of simple student networks works, and moreover outperforms distillation from a more powerful yet static teacher.</p>
+<ol start="2">
+<li>Knowledge Distillation by On-the-Fly Native Ensemble</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1806.04606.pdf">https://arxiv.org/pdf/1806.04606.pdf</a></p>
+<p>Knowledge distillation is effective to train small and generalisable network models for meeting the low-memory and fast running requirements. Existing offline distillation methods rely on a strong pre-trained teacher, which enables favourable knowledge discovery and transfer but requires a complex two-phase training procedure. Online counterparts address this limitation at the price of lacking a highcapacity teacher. In this work, we present an On-the-fly Native Ensemble (ONE) learning strategy for one-stage online distillation. Specifically, ONE trains only a single multi-branch network while simultaneously establishing a strong teacher onthe-fly to enhance the learning of target network. Extensive evaluations show that ONE improves the generalisation performance a variety of deep neural networks more significantly than alternative methods on four image classification dataset: CIFAR10, CIFAR100, SVHN, and ImageNet, whilst having the computational efficiency advantages.</p>
+<ol start="3">
+<li>Online Knowledge Distillation via Collaborative Learning</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Online_Knowledge_Distillation_via_Collaborative_Learning_CVPR_2020_paper.pdf">https://openaccess.thecvf.com/content_CVPR_2020/papers/Guo_Online_Knowledge_Distillation_via_Collaborative_Learning_CVPR_2020_paper.pdf</a></p>
+<p>This work presents an efficient yet effective online Knowledge Distillation method via Collaborative Learn ing, termed KDCL, which is able to consistently improve the generalization ability of deep neural networks (DNNs) that have different learning capacities. Unlike existing two stage knowledge distillation approaches that pre-train a DNN with large capacity as the “teacher” and then transfer the teacher’s knowledge to another “student” DNN unidirectionally (i.e. one-way), KDCL treats all DNNs as “students” and collaboratively trains them in a single stage (knowledge is transferred among arbitrary students during collaborative training), enabling parallel computing, fast computations, and appealing generalization ability. Specifically, we carefully design multiple methods to generate soft target as supervisions by effectively ensembling predictions of students and distorting the input images.</p>
+<ol start="4">
+<li>Peer Collaborative Learning for Online Knowledge Distillation</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2006.04147.pdf">https://arxiv.org/pdf/2006.04147.pdf</a></p>
+<p>Traditional knowledge distillation uses a two-stage training strategy to transfer knowledge from a highcapacity teacher model to a smaller student model, which relies heavily on the pre-trained teacher. Recent online knowledge distillation alleviates this limitation by collaborative learning, mutual learning and online ensembling, following a one-stage end-to-end training strategy. However, collaborative learning and mutual learning fail to construct an online high-capacity teacher, whilst online ensembling ignores the collaboration among branches and its logit summation impedes the further optimisation of the ensemble teacher. In this work, we propose a novel Peer Collaborative Learning method for online knowledge distillation. Specifically, we employ a multi-branch network (each branch is a peer) and assemble the features from peers with an additional classifier as the peer ensemble teacher to transfer knowledge from the high-capacity teacher to peers and to further optimise the ensemble teacher.</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/NLP/" rel="tag"># NLP</a>
+          </div>
+
+        
+
+
+        
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Relation-Extraction"><span class="nav-number">1.</span> <span class="nav-text">Relation Extraction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Interpretation"><span class="nav-number">2.</span> <span class="nav-text">Interpretation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NER"><span class="nav-number">3.</span> <span class="nav-text">NER</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Few-shot-Zero-shot-RE"><span class="nav-number">4.</span> <span class="nav-text">Few-shot&#x2F;Zero-shot RE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Integrate-PLMs-with-KG"><span class="nav-number">5.</span> <span class="nav-text">Integrate PLMs with KG</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Entity-aware-language-models"><span class="nav-number">5.1.</span> <span class="nav-text">Entity-aware language models</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Integrate-PLMs-with-KGE-amp-Transformer-structure"><span class="nav-number">5.2.</span> <span class="nav-text">Integrate PLMs with KGE &amp; Transformer structure</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Knowledge-Graph-Embedding"><span class="nav-number">6.</span> <span class="nav-text">Knowledge Graph Embedding</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Text-enhanced-KGE"><span class="nav-number">6.1.</span> <span class="nav-text">Text-enhanced KGE</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Calibration"><span class="nav-number">6.2.</span> <span class="nav-text">Calibration</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Distillation"><span class="nav-number">7.</span> <span class="nav-text">Distillation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Online-distillation"><span class="nav-number">7.1.</span> <span class="nav-text">Online distillation</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Keming Lu</p>
+  <div class="site-description" itemprop="description">A website for recalling</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Lukeming-tsinghua" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Lukeming-tsinghua" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:keminglu@usc.edu" title="E-Mail → mailto:keminglu@usc.edu" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Keming Lu</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
